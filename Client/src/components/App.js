@@ -8,10 +8,6 @@ import About from "./About";
 import data from "../data/data.json";
 import "./App.css";
 
-const createMarkup = () => {
-  return { _html: "dangerous markup" };
-};
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -44,8 +40,6 @@ class App extends Component {
           </Switch>
           <div className="footer">
             <p>&copy; {this.state.name} Inc.</p>
-            <div innerHTML={createMarkup()}></div>
-            <div dangerouslySetInnerHTML={createMarkup()}></div>
           </div>
         </div>
       </Router>
